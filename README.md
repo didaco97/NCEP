@@ -43,9 +43,6 @@ The setup state ledger is here:
 
 [docs/setup/NCEP_BACKEND_ENV_STATE.md](docs/setup/NCEP_BACKEND_ENV_STATE.md)
 
-The Codex loop prompt used to create this setup is here:
-
-[docs/ncep-backend-env-loop-prompt.md](docs/ncep-backend-env-loop-prompt.md)
 
 ## Development Notes
 
