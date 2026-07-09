@@ -19,19 +19,35 @@ python -m scripts.seed_dev_data
 uvicorn app.main:app --reload
 ```
 
-Then open:
+## Run And Check
+
+After running:
+
+```powershell
+uvicorn app.main:app --reload
+```
+
+Open this URL in your browser:
 
 ```text
 http://127.0.0.1:8000/docs
 ```
 
-Or verify from a second terminal:
+You should see the FastAPI Swagger docs.
+
+To check from PowerShell, open a second terminal and run:
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8000/health
 Invoke-RestMethod http://127.0.0.1:8000/api/v1/db-summary
 Invoke-RestMethod http://127.0.0.1:8000/api/v1/patients
 ```
+
+Expected result:
+
+- `/health` returns `status: ok`
+- `/api/v1/db-summary` shows database row counts
+- `/api/v1/patients` returns the synthetic patient `SYNTH-NCEP-0001`
 
 ## Full Setup Guide
 
